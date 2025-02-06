@@ -80,6 +80,7 @@ function ItemList()
     
     return (
         <div>
+            // AI assisted, as I kept running into errors using a For loop
             {itemList.map((item, index) => (
                 <Item 
                     key={index} 
