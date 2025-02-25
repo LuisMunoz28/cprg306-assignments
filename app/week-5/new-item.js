@@ -4,13 +4,12 @@ import { useState } from "react"
 
 function NewItem()
 {
-    let [quantity, setQuantity] = useState(1);
+    const [name, setName] = useState("");
 
-    let [name, setName] = useState("");
+    const [category, setCategory] = useState("Produce");
 
-    let [category, setCategory] = useState("Produce");
+    const [quantity, setQuantity] = useState(1);    
     
-
     const increment = () => 
     {
         if(quantity < 20 ) 
