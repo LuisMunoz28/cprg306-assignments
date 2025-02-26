@@ -41,7 +41,7 @@ function NewForm()
         setQuantity(1);
     }
 
-/**I made the Quantity input label of type number because the component i created on week 4 did not look good with the other input areas */
+/**I made the Quantity input tag of type "number" because the component I created on week 4 did not look good with the other input areas */
     return(
         <form onSubmit={handleSubmit}>
             
