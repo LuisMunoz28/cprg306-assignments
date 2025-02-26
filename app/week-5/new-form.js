@@ -45,14 +45,14 @@ function NewForm()
     return(
         <form onSubmit={handleSubmit}>
             
-            <label for="nameField" className="m-2">Name:</label>
+            <label htmlFor="nameField" className="m-2">Name:</label>
             <input type="text" id="nameField" name="nameField" value={name} onChange={handleNameChange} required className="text-black rounded-lg"/>
             
             
-            <label for="quantityField" className="m-2">Quantity:</label>
+            <label htmlFor="quantityField" className="m-2">Quantity:</label>
             <input type="number" id="quantityField" name="quantityField" min="1" max="20" value={quantity} onChange={handleQuantityChange} className="text-black rounded-lg"/>
             
-            <label for="categoryField" className="m-2">Category:</label>
+            <label htmlFor="categoryField" className="m-2">Category:</label>
             <select id="categoryField" name="categoryField" onChange={handleCategoryChange} className="text-black m-2 rounded-lg">
                 <option value="Produce">Produce</option>
                 <option value="Dairy">Dairy</option>
