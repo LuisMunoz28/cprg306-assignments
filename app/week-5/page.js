@@ -1,10 +1,10 @@
 "use client"
-import NewItem from './new-item.js'
+import NewForm from './new-form.js';
 
 function Page() 
 {
     return(
-        <NewItem></NewItem>
+        <NewForm></NewForm>
     )
 }
 
