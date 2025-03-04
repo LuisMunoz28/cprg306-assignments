@@ -8,13 +8,14 @@ function ItemList()
 {
     const [sortBy, setSortBy] = useState("name");
     
+
     if(sortBy === "name") 
         {
-
+            items.sort((a,b) => a.name.LocaleCompare(b.name)); 
         }
     else if(sortBy === "category") 
         {
-
+            items.sort((a,b) => a.category.LocaleCompare(b.category));
         }
 
     return (
