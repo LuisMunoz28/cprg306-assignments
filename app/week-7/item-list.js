@@ -9,19 +9,19 @@ function ItemList({ items })
 {   
     const [sortBy, setSortBy] = useState("name");
     
-
+    let itemsCopy = items;
     if(sortBy === "name") 
         {
-            items.sort((a,b) => a.name.localeCompare(b.name)); 
+            itemsCopy.sort((a,b) => a.name.localeCompare(b.name)); 
         }
     else if(sortBy === "category") 
         {
-            items.sort((a,b) => a.category.localeCompare(b.category));
+            itemsCopy.sort((a,b) => a.category.localeCompare(b.category));
         }
     else if(sortBy === "quantity") 
         {
-            items.sort((a,b) => a.quantity - b.quantity);
-            items.reverse();
+            itemsCopy.sort((a,b) => a.quantity - b.quantity);
+            itemsCopy.reverse();
         }
 
     return (

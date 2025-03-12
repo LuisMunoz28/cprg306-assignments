@@ -10,8 +10,8 @@ function Page()
 {
     const [items, setItems] = useState(itemsData);
 
-    const handleAddItem = (event) => {
-        setItems([...items,event]);
+    const handleAddItem = (item) => {
+        setItems([...items,item]);
     }
 
     return(
