@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-function NewForm({ onAddItem }) 
+function NewForm({onAddItem}) 
 {
     const [name, setName] = useState(" ");
 
